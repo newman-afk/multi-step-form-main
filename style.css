@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  /* Primary */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  /* Neutral */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Magnolia);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+section {
+  display: flex;
+  position: relative;
+  background-color: var(--White);
+  padding: 1em;
+  border-radius: 0.8em;
+}
+.steps-container {
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 15em;
+}
+.step {
+  display: flex;
+  margin: 2em 6em 0 2em;
+}
+.step-text {
+  padding-left: 0.7em;
+}
+.step-text p:first-child {
+  font-size: 0.2rem;
+  color: var(--Strawberry-red);
+  font-weight: 100;
+}
+.step-text p:last-child {
+  font-size: 0.8rem;
+  color: var(--White);
+}
+span {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--Strawberry-red);
+}
+.content-container {
+  margin: 2em 5em;
+  position: relative;
+  width: 23rem;
+}
+.content-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.content-description {
+  opacity: 0.5;
+  margin-top: 1em;
+  font-size: 0.5rem;
+}
+.bigChangeArea {
+  margin-top: 2em;
+}
+.levels {
+  justify-content: space-between;
+  gap: 1em;
+}
+.levels,
+.toggle,
+.buttons {
+  display: flex;
+}
+.level-item {
+  border: 1px solid var(--Marine-blue);
+  border-radius: 0.5em;
+  padding: 0.8em;
+  width: 7em;
+}
+.level-item img {
+  transform: scale(0.8);
+}
+.level-item p:nth-of-type(1) {
+  letter-spacing: -0.05rem;
+  margin-top: 2em;
+}
+.level-item p:nth-of-type(2) {
+  font-size: 0.5rem;
+  opacity: 0.5;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1em;
+}
+.toggle {
+  background-color: var(--Magnolia);
+  border-radius: 0.5em;
+  font-size: 0.5rem;
+  font-weight: 500;
+  padding: 1.5em 10em;
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttons {
+  width: 100%;
+  justify-content: space-between;
+  font: inherit;
+  font-size: 0.5rem;
+  position: absolute;
+  bottom: 0;
+}
+.buttons > button:first-child {
+  font-weight: 700;
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+}
+.buttons > button:last-child {
+  font-weight: 700;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+  font: inherit;
+  padding: 1em;
+  border-radius: 0.5em;
+}
