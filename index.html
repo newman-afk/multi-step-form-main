@@ -20,6 +20,8 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        position: absolute;
+        bottom: 1em;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -29,76 +31,115 @@
   <body>
     <section>
       <div class="steps-container">
-        <div class="step">
+        <div class="step active">
           <span>1</span>
           <div class="step-text">
-            <p>STEP 1</p>
+            <p>STEP1</p>
             <p>YOUR INFO</p>
           </div>
         </div>
         <div class="step">
           <span>2</span>
           <div class="step-text">
-            <p>STEP 2</p>
+            <p>STEP2</p>
             <p>SELECT PLAN</p>
           </div>
         </div>
         <div class="step">
           <span>3</span>
           <div class="step-text">
-            <p>STEP 3</p>
+            <p>STEP3</p>
             <p>ADD-ONS</p>
           </div>
         </div>
         <div class="step">
           <span>4</span>
           <div class="step-text">
-            <p>STEP 4</p>
+            <p>STEP4</p>
             <p>SUMMARY</p>
           </div>
         </div>
       </div>
       <div class="content-container">
-        <div class="content-title">Select your plan</div>
-        <div class="content-description">
-          You have the option of monthly or yearly billing
+        <div class="warp active">
+          <p class="title">Personal info</p>
+          <p class="description">
+            Please provide your name,email address and phone number.
+          </p>
+          <form id="form">
+            <div class="form-item">
+              <label for="name">Name</label>
+              <input
+                placeholder="e.g.Stephen King"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label for="email">Eamil Address</label>
+              <input
+                placeholder="e.g.stephenking@loren.com"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <label for="phone">Phone Number</label>
+              <input
+                placeholder="e.g.+1 234 567 890"
+                type="phone"
+                name="phone"
+                id="phone"
+              />
+            </div>
+          </form>
         </div>
-        <div class="bigChangeArea">
-          <div class="levels">
-            <div class="level-item">
-              <img src="./assets/images/icon-arcade.svg" alt="" />
-              <p>Arcade</p>
-              <p>$9/mo</p>
-            </div>
-            <div class="level-item">
-              <img src="./assets/images/icon-advanced.svg" alt="" />
-              <p>Advanced</p>
-              <p>$12/mo</p>
-            </div>
-            <div class="level-item">
-              <img src="./assets/images/icon-pro.svg" alt="" />
-              <p>Pro</p>
-              <p>$15/mo</p>
-            </div>
-          </div>
-          <div class="toggle">
-            <p>Monthly</p>
-            <input type="checkbox" />
-            <p>Yearly</p>
-          </div>
+        <div class="warp">
+          <p class="title">Select your plan</p>
+          <p class="description">
+            Please provide your name,email address and phone number.
+          </p>
         </div>
-
-        <div class="buttons">
-          <button>Go Back</button>
-          <button>Next Step</button>
+        <div class="warp">
+          <p class="title">Pick add-ons</p>
+          <p class="description">
+            Please provide your name,email address and phone number.
+          </p>
+        </div>
+        <div class="warp">
+          <p class="title">Finishing up</p>
+          <p class="description">
+            Please provide your name,email address and phone number.
+          </p>
+        </div>
+        <div class="warp success">
+          <img src="./assets/images/icon-thank-you.svg" alt="thank you" />
+          <p>Thank you!</p>
+          <p>
+            Thanks for Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus blanditiis nam tempora impedit esse aliquid ipsa aut
+            nostrum aperiam veritatis.
+          </p>
+        </div>
+      </div>
+      <div class="btns">
+        <div class="btn-warp">
+          <button class="btn-left">Go Back</button>
+          <button type="submit" form="form" class="btn-right">Next Step</button>
         </div>
       </div>
     </section>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">符画虎 | Lip</a>.
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
