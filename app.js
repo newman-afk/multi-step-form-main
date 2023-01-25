@@ -5,6 +5,7 @@ const btnRight = document.querySelector(".btn-right");
 const success = document.querySelector(".success");
 const btns = document.querySelector(".btns");
 const form = document.querySelector("#form");
+const circlebox = document.querySelector(".circlebox");
 
 let active = 1;
 btnLeft.addEventListener("click", (e) => {
@@ -56,3 +57,6 @@ function goNext() {
     btnRight.classList.remove("confirm");
   }
 }
+circlebox.addEventListener("click", () => {
+  circlebox.classList.toggle("toggle");
+});
